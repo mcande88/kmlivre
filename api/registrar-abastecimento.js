@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
 
         // Cria um novo registro na tabela 'Registros de Abastecimento'
         await base(TABLE_NAME).create({
-            "Veículo": [idVeiculo], // Link para o registro do veículo
+            "Veículo": [Placa], // Link para o registro do veículo
             "Data": new Date().toISOString(), // Data e hora atual
             "KM do Abastecimento": km,
             "Litros": litros,
