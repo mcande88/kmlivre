@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const dadosMotorista = {
         nome: "João da Silva",
         placa: "ABC-1234",
-        idVeiculo: "recXYZ123", // ID do registro do veículo no Airtable (ex: 'recxxxxxxxxxxxxxx')
+        idVeiculo: "recV9GkSeBf7TcDCK
+", // ID do registro do veículo no Airtable (ex: 'recxxxxxxxxxxxxxx')
         logoEmpresa: "https://via.placeholder.com/150x50.png?text=Logo+Empresa", // URL do logo da empresa
         nomeEmpresa: "Construtora Solidez",
         // Adicione aqui o ID da Empresa (ex: 'recYYYYYYYYYYYYYY' ) se precisar para a função serverless
