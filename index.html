@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM Fácil - Painel do Motorista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="" alt="Logo da Empresa" id="logo-empresa" class="logo">
+            <h1 id="nome-empresa">Nome da Empresa</h1>
+            <div class="info-motorista">
+                <p>Motorista: <span id="nome-motorista">Carregando...</span></p>
+                <p>Veículo: <span id="placa-veiculo">Carregando...</span></p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Seção de Registro de Abastecimento -->
+            <section class="card">
+                <h2>Registrar Abastecimento</h2>
+                <form id="form-abastecimento">
+                    <div class="form-group">
+                        <label for="km-abastecimento">KM no Odômetro</label>
+                        <input type="number" id="km-abastecimento" placeholder="Ex: 15500" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="litros">Litros Abastecidos</label>
+                        <input type="number" step="0.01" id="litros" placeholder="Ex: 45.50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor-pago">Valor Total (R$)</label>
+                        <input type="number" step="0.01" id="valor-pago" placeholder="Ex: 250.00" required>
+                    </div>
+                    <button type="submit">Salvar Abastecimento</button>
+                </form>
+            </section>
+
+            <!-- Seção de Fechamento Mensal -->
+            <section class="card">
+                <h2>Fechamento do Mês</h2>
+                <form id="form-fechamento">
+                    <div class="form-group">
+                        <label for="km-fechamento">KM Final do Mês</label>
+                        <input type="number" id="km-fechamento" placeholder="Ex: 16200" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="foto-odometro">Foto do Odômetro</label>
+                        <input type="file" id="foto-odometro" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" rows="3" placeholder="Ex: Pneu dianteiro esquerdo trocado."></textarea>
+                    </div>
+                    <button type="submit">Enviar Fechamento</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>KM Fácil &copy; 2025</p>
+        </footer>
+
+        <div id="mensagem-status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

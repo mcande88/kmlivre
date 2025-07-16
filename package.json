@@ -1,0 +1,15 @@
+{
+  "name": "km-facil-app",
+  "version": "1.0.0",
+  "description": "Aplicativo KM Fácil para motoristas",
+  "main": "api/registrar-abastecimento.js",
+  "scripts": {
+    "start": "node api/registrar-abastecimento.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable": "^0.12.0" 
+  }
+}
